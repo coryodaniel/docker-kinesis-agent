@@ -1,0 +1,6 @@
+{
+  "cloudwatch.emitMetrics": true,
+  "kinesis.endpoint": "",
+  "cloudwatch.endpoint": "",
+  "flows": [{}]
+}
