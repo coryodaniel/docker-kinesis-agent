@@ -21,7 +21,7 @@ release:
 	docker push ${IMAGE_URL}:${REL_TIME}
 
 shell:
-	docker run --name ${TEST_PREFIX}-shell -it --rm ${IMAGE_NAME}:latest /bin/bash
+	docker run --name ${TEST_PREFIX}-shell -it --rm ${IMAGE_NAME}:latest sh
 
 clean:
 	docker ps --format "{{.Names}}" -a | grep "${TEST_PREFIX}" | xargs docker rm
