@@ -1,7 +1,7 @@
 FROM openjdk:8u171-jdk-alpine3.7
 MAINTAINER Cory ODaniel "docker@coryodaniel.com"
 
-ENV AGENT_VERSION=1.1.3 \
+ENV AGENT_VERSION=1.1.4 \
     JAVA_START_HEAP=256m \
     JAVA_MAX_HEAP=512m \
     LOG_LEVEL=INFO
