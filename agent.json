@@ -1,16 +1,11 @@
 {
-  "cloudwatch.emitMetrics": true,
-  "kinesis.endpoint": "",
-  "firehose.endpoint": "",
+  "cloudwatch.emitMetrics": false,
+  "kinesis.endpoint": "http://kinesis:4567",
   "flows": [
     {
-      "filePattern": "/tmp/app.log*",
-      "kinesisStream": "yourkinesisstream",
+      "filePattern": "/tmp/carbonudplog/*",
+      "kinesisStream": "my-fancy-kinesis-stream",
       "partitionKeyOption": "RANDOM"
-    },
-    {
-      "filePattern": "/tmp/app.log*",
-      "deliveryStream": "yourdeliverystream"
     }
   ]
 }

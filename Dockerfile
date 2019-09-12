@@ -18,4 +18,9 @@ RUN apk add --no-cache shadow curl bash apache-ant \
 
 COPY agent.json /etc/aws-kinesis/agent.json
 COPY start.sh .
+
+ENV AWS_CBOR_DISABLE=1
+ENV AWS_ACCESS_KEY_ID=aaaaaaaaaaaaaaaaaaaa
+ENV AWS_SECRET_ACCESS_KEY=bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
 CMD ["./start.sh"]

@@ -1,7 +1,7 @@
 .PHONY: build run release url clean shell exec up
 
 REGISTRY 	 	:= quay.io
-IMAGE_NAME 	:= coryodaniel/kinesis-agent
+IMAGE_NAME 	:= pkajaba/kinesis-agent
 IMAGE_URL  	:= ${REGISTRY}/${IMAGE_NAME}
 TEST_PREFIX := kinesis-agent-dbg
 
